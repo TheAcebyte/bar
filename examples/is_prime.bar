@@ -1,0 +1,20 @@
+PROGRAM IsPrime
+CONSTANTS
+    number = 659
+VARIABLES
+    i: INTEGER
+    is_prime: BOOLEAN
+BEGIN
+    LET is_prime = TRUE
+    LET i = 2
+
+    WHILE i ^ 2 <= number AND is_prime DO
+        IF number % i == 0 THEN
+            LET is_prime = FALSE
+        ENDIF
+
+        LET i = i + 1
+    ENDWHILE
+
+    PRINT "Is", number, "prime?", is_prime
+END

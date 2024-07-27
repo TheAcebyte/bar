@@ -1,0 +1,13 @@
+PROGRAM Concatenation
+VARIABLES
+    hello, world: STRING
+    comma, mark: CHARACTER
+BEGIN
+    LET hello = "Hello"
+    LET comma = ','
+    LET world = "World"
+    LET mark = '!'
+
+    # You can concatenate strings and characters using the & operator.
+    PRINT hello & comma & ' ' & world & mark
+END

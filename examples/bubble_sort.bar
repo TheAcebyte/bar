@@ -1,0 +1,26 @@
+PROGRAM BubbleSort
+CONSTANTS
+    size = 10
+VARIABLES
+    array: INTEGER[size]
+    i, j, temp: INTEGER
+BEGIN
+    FOR i FROM 1 TO size
+        LET array[i] = size - i
+    ENDFOR
+
+    PRINT "Unsorted Array:", array
+
+    FOR i FROM 1 TO size
+        FOR j FROM 1 TO size
+            IF array[j] > array[i] THEN
+                LET temp = array[i]
+                LET array[i] = array[j] 
+                LET array[j] = temp
+            ENDIF
+        ENDFOR
+    ENDFOR
+
+    PRINT "Sorting..."
+    PRINT "Sorted Array:", array
+END

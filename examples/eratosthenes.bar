@@ -1,0 +1,30 @@
+PROGRAM Eratosthenes
+CONSTANTS
+    size = 100
+VARIABLES
+    nums: INTEGER[size]
+    prime_nums: INTEGER[size]
+    i, j, count: INTEGER
+BEGIN
+    LET count = 0
+
+    FOR i FROM 2 TO size
+        LET nums[i] = 1
+    ENDFOR
+
+    FOR i FROM 2 TO size
+        IF nums[i] == 1 THEN
+            LET count = count + 1
+            LET prime_nums[count] = i
+
+            FOR j FROM 2 * i TO size STEP i
+                LET nums[j] = 0
+            ENDFOR
+        ENDIF
+    ENDFOR
+
+    # Shrink array to get rid of unnecessary space
+    RESIZE prime_nums TO count
+
+    PRINT prime_nums
+END
