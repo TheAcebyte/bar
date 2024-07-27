@@ -20,14 +20,14 @@
 
 ## Installation
 Make sure you first have [git](https://git-scm.com) and [Node.js](https://nodejs.org), then run the following commands on the terminal:
-```console
+```
 git clone https://github.com/TheAcebyte/bar.git
 cd bar
 npm install
 ```
 
 To run the `script.bar` file, you need to run:
-```console
+```
 npx ts-node main.ts
 ```
 
