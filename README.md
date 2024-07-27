@@ -10,7 +10,7 @@
 >    PRINT "Hello, World!"
 > END
 > ```
-> For more examples, you can look at the `examples/` directory.
+> For more advanced examples, you can look at the `examples/` directory.
 
 ## Features
 * Integer, float, string, character and boolean types.
