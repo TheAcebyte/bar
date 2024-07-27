@@ -10,6 +10,7 @@ BEGIN
     ENDFOR
 
     PRINT "Unsorted Array:", array
+    PRINT "Sorting..."
 
     FOR i FROM 1 TO size
         FOR j FROM 1 TO size
@@ -21,6 +22,5 @@ BEGIN
         ENDFOR
     ENDFOR
 
-    PRINT "Sorting..."
     PRINT "Sorted Array:", array
 END
