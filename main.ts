@@ -6,7 +6,7 @@ import { readFileSync } from 'fs';
 
 function main() {
     try {
-        const src = readFileSync('./script.algo', 'utf8');
+        const src = readFileSync('./script.bar', 'utf8');
 
         const appLexer = new Lexer(src);
         const appParser = new Parser(appLexer);
